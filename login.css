@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    min-height: 100vh;
+    desplay: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(s2.PNG) ;
+  margin-bottom: -400px;
+    animation: saman 25s ease-in-out infinite;
+    overflow: hidden;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+@keyframes ahma {
+    0%{
+        background-position: 0% 50%;
+    }
+     50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.saraki {
+   
+    margin: 300px auto;
+    position: relative;
+    width: 380px;
+    
+    padding: 40px;
+    animation: a 4s ease-in-out infinite;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+box-shadow: 0 25px 45px black;
+z-index: 10;
+overflow: hidden;
+}
+@keyframes a {
+    0%{
+        transform: translateY(1px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
+.saraki::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    transform: skewX(-15deg);
+    transition: 4s;
+    pointer-events: none;
+}
+.saraki:hover::before{
+    left: 120%;
+}
+.saraki h2{
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    text-shadow: 0 5px 8px black;
+}
+.input{
+    position: relative;
+    margin-bottom: 30px;
+
+
+}
+
+.input input{
+   width: 100%;
+   padding: 15px 20px;
+   background: rgba(255, 255, 255, 0.2);
+   border: none;
+   border-radius: 14px;
+   font-size: 16px;
+   color: aliceblue;
+    outline: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+.input input::placeholder{
+    color: aliceblue;
+}
+.input input:focus{
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 5px 8px 20ox rgba(0, 0, 0, 0.7);
+}
+.input label{
+    transform: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: aliceblue;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.input input:focus + label,
+.input input:valid + label{
+    top: -10px;
+    left: 15px;
+    color: aliceblue;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+.remeber{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    font-size: 14px;
+    color: aliceblue;
+
+}
+.remeber label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.remeber input{
+    margin-right: 8px;
+    accent-color: aliceblue;
+}
+.remeber a{
+   font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 0.3s ease;
+
+
+}
+.remeber a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+
+}
+button:hover{
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+    transform: translateX(-3px);
+
+}
+.rigister{
+    text-align: center;
+    font-size: 14px;
+    color: aliceblue;
+}
+.rigister a{
+    color: aliceblue;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+.rigister a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
